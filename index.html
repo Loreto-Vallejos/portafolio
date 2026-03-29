@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio María Loreto Vallejos</title>
+    
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   
+
+    <!--hoja de estilos css-->
+    <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+    <header>
+        <nav class="navbar">
+        <!--logo-->
+        <a class="navbar-brand" href="index.html">
+         <i class="fa-solid fa-code fa-2x icono-fucsia"></i>
+        </a>
+
+        <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+        <ul class="nav-links">
+            <li><a href="#work">Portafolio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+        <h1>Hola, soy María Loreto</h1>
+        <p>Diseñadora industrial con especialización en UX UI, ergonomía y desarrollo web
+        </p>
+
+        <!--boton fucsia-->
+        <div class="espaciado">        
+            <a class="btn" href="assets/pdf/cv-maria-loreto-vallejos-23.07.25.pdf" target="_blank" rel="noopener noreferrer">Descargar Currículum
+            </a>
+        </div>
+   
+        </section>
+
+        <!--proyectos-->
+        <section id="work" class="work-section">
+        <h2>Proyectos en los que he trabajado</h2>
+        <div class="grid">
+
+            <a href="../../../../diseno-industrial.html" target="_blank" rel="noopener noreferrer" class="card-link">
+            <div class="card">Diseño Industrial</div>
+            </a>
+
+            <a href="assets/pdf/trabajo-grado-magister-mlvc-2024.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
+            <div class="card">Ergonomía</div>
+            </a>
+
+            <a href="assets/pdf/ux-ui-mobikit-2023.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
+            <div class="card">UX UI</div>
+            </a>
+
+            <a href="../../../../desarrollo-web.html" target="_blank" rel="noopener noreferrer" class="card-link">
+            <div class="card">Desarrollo Web</div>
+            </a>
+
+        </div>
+        </section>
+        <!--sobre mi-->
+
+        <section id="about" class="about-section">
+            <article>
+                <h2>Sobre mí</h2>
+                <div class="container">
+                    <em><p>Soy Diseñadora Industrial con sólida experiencia en el desarrollo de productos, mobiliario y soluciones centradas en el usuario. A lo largo de más de 10 años he trabajado en proyectos que combinan funcionalidad, estética y usabilidad, integrando principios de ergonomía y diseño técnico.
+
+                    <p>Mi formación incluye un Magíster en Ergonomía y Factores Humanos, lo que me permite evaluar y diseñar productos y espacios considerando el bienestar físico, cognitivo y emocional de las personas. He participado en todas las etapas del diseño: desde la conceptualización, dibujo técnico y prototipado, hasta la evaluación de carga y análisis antropométricos.</p>
+
+                    <p>En los últimos años he ampliado mi enfoque al diseño digital, incorporando conocimientos en desarrollo Front-End y diseño UX/UI para potenciar la experiencia de usuario también en entornos virtuales.</p>
+
+                    <p>Hoy combino lo mejor del diseño físico y digital para ofrecer soluciones integrales, pensadas desde el cuerpo, la experiencia y el contexto de uso.</p></em>
+                </div>
+                </article>
+        </section>
+            
+
+        <section id="contact" class="contact-section">
+        <h2>Contacto</h2>
+        <p>¿Quieres trabajar conmigo? Escríbeme.</p>
+
+        <form action="https://formsubmit.co/macerdava@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+        </form>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>© 2025 LoretoVallejos.cl</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>

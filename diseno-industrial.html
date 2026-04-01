@@ -1,63 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio María Loreto Vallejos</title>
-    
-    <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-   
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diseño Industrial — María Loreto Vallejos</title>
 
-    <!--hoja de estilos css-->
-    <link rel="stylesheet" href="css/style.css"/>
-    </head>
-    <body>
-    <header>
-        <nav class="navbar">
-        <!--logo-->
-        <a class="navbar-brand" href="diseno-industrial.html">
-         <i class="fa-solid fa-code fa-2x icono-fucsia"></i>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Geist+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <div class="nav-logo-icon">
+        <i class="fa-solid fa-code"></i>
+      </div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#work">Portafolio</a></li>
+      <li><a href="index.html#about">Sobre mí</a></li>
+      <li><a href="index.html#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero-eyebrow">Portafolio María Loreto Vallejos</p>
+      <h1 class="hero-title">
+        Diseño<br><em>Industrial</em>
+      </h1>
+      <p class="hero-sub">
+        Proyectos de diseño industrial, modelado técnico y documentación para fabricación.
+      </p>
+      <div class="hero-cta">
+        <a class="btn-primary-custom" href="assets/pdf/CV_maria_vallejos_23.03.26.pdf" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-arrow-down" style="font-size:11px"></i>
+          Ver Currículum
+        </a>
+        <a class="btn-ghost" href="#work">
+          Ver proyectos
+          <i class="fa-solid fa-arrow-down" style="font-size:10px"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <div class="section-header reveal">
+        <span class="section-label">Proyectos seleccionados</span>
+        <span class="section-count">04 trabajos</span>
+      </div>
+
+      <div class="cards-grid">
+
+        <a href="assets/pdf/lamina-san-miguel.pdf" target="_blank" rel="noopener noreferrer" class="pf-card reveal">
+          <span class="card-num">01</span>
+          <div class="card-body">
+            <h3 class="card-h3">Casa San Miguel</h3>
+            <p class="card-p">Levantamiento de medidas, modelado y renderizado arquitectónico.</p>
+            <span class="card-arrow">Ver proyecto →</span>
+          </div>
         </a>
 
-        <button id="menu-toggle" aria-label="Abrir menú">☰</button>
-        <ul class="nav-links">
-            <li><a href="../../../../index.html">Portafolio</a></li>
-            <li><a href="../../../../index.html">Sobre mí</a></li>
-            <li><a href="../../../../index.html">Contacto</a></li>
-        </ul>
-        </nav>
-    </header>
+        <a href="assets/pdf/presentacion-ejes-09.25.pdf" target="_blank" rel="noopener noreferrer" class="pf-card reveal reveal-delay-1">
+          <span class="card-num">02</span>
+          <div class="card-body">
+            <h3 class="card-h3">Ejes Industriales</h3>
+            <p class="card-p">Documentación técnica para fabricación de ejes para maquinaria industrial.</p>
+            <span class="card-arrow">Ver proyecto →</span>
+          </div>
+        </a>
 
-    <main>
-                <section id="work" class="work-section">
-        <h2>Proyectos en los que he trabajado</h2>
-        <div class="grid">
+        <a href="assets/pdf/lamina-procesador-port.pdf" target="_blank" rel="noopener noreferrer" class="pf-card reveal reveal-delay-2">
+          <span class="card-num">03</span>
+          <div class="card-body">
+            <h3 class="card-h3">Proyecto de Investigación</h3>
+            <p class="card-p">Documentación técnica para fabricación en el marco de un proyecto de investigación.</p>
+            <span class="card-arrow">Ver proyecto →</span>
+          </div>
+        </a>
 
-            <a href="assets/pdf/lamina-san-miguel.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
-            <div class="card">Levantamiento de medidas, modelado y renderizado casa San Miguel</div>
-            </a>
+        <a href="assets/pdf/memoria-titulo-mlvc-2013.pdf" target="_blank" rel="noopener noreferrer" class="pf-card reveal reveal-delay-3">
+          <span class="card-num">04</span>
+          <div class="card-body">
+            <h3 class="card-h3">Tesis de Titulación</h3>
+            <p class="card-p">Dispositivo de ortopedia infanto-juvenil. Memoria de título.</p>
+            <span class="card-arrow">Ver proyecto →</span>
+          </div>
+        </a>
 
-            <a href="assets/pdf/presentacion-ejes-09.25.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
-            <div class="card">Documentación para fabricación: Ejes para maquinaria industrial</div>
-            </a>
+      </div>
+    </section>
 
-            <a href="assets/pdf/lamina-procesador-port.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
-            <div class="card">Documentación para fabricación proyecto de investigación</div>
-            </a>
+  </main>
 
-            <a href="assets/pdf/memoria-titulo-mlvc-2013.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
-            <div class="card">Tesis de titulación: Dispositivo de ortopedia infanto-juvenil</div>
-            </a>
+  <footer>
+    <p>© 2026 LoretoVallejos.cl</p>
+    <div class="footer-links">
+      <a href="index.html#work">Portafolio</a>
+      <a href="index.html#about">Sobre mí</a>
+      <a href="index.html#contact">Contacto</a>
+    </div>
+  </footer>
 
-        </div>
-        </section>
-
-    </main>
-    <footer>
-        <p>© 2025 LoretoVallejos.cl</p>
-    </footer>
-
-    <script src="script.js"></script>
-    </body>
+  <script src="main.js"></script>
+</body>
 </html>

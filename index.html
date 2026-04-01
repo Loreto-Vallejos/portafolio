@@ -1,108 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio María Loreto Vallejos</title>
-    
-    <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-   
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio — María Loreto Vallejos</title>
 
-    <!--hoja de estilos css-->
-    <link rel="stylesheet" href="css/style.css"/>
-    </head>
-    <body>
-    <header>
-        <nav class="navbar">
-        <!--logo-->
-        <a class="navbar-brand" href="index.html">
-         <i class="fa-solid fa-code fa-2x icono-fucsia"></i>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Geist+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <div class="nav-logo-icon">
+        <i class="fa-solid fa-code"></i>
+      </div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#work">Portafolio</a></li>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero-eyebrow">Diseñadora Industrial · UX UI · Ergonomía · Desarrollo Web</p>
+      <h1 class="hero-title">
+        Hola,<br>soy <em>María</em><br><em>Loreto</em>
+      </h1>
+      <p class="hero-sub">
+        Diseñadora industrial con más de 10 años de experiencia en productos centrados en las personas. Magíster en Ergonomía y Factores Humanos.
+      </p>
+      <div class="hero-cta">
+        <a class="btn-primary-custom" href="assets/pdf/CV_maria_vallejos_23.03.26.pdf" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-arrow-down" style="font-size:11px"></i>
+          Ver Currículum
+        </a>
+        <a class="btn-ghost" href="#work">
+          Ver proyectos
+          <i class="fa-solid fa-arrow-down" style="font-size:10px"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="work">
+      <div class="section-header reveal">
+        <span class="section-label">Proyectos seleccionados</span>
+        <span class="section-count">04 áreas</span>
+      </div>
+
+      <div class="cards-grid">
+
+        <a href="diseno-industrial.html" class="pf-card reveal">
+          <span class="card-num">01</span>
+          <div class="card-body">
+            <h3 class="card-h3">Diseño Industrial</h3>
+            <p class="card-p">Proyectos de modelado, renderizado y documentación técnica para fabricación.</p>
+            <span class="card-arrow">Ver proyectos →</span>
+          </div>
         </a>
 
-        <button id="menu-toggle" aria-label="Abrir menú">☰</button>
-        <ul class="nav-links">
-            <li><a href="#work">Portafolio</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-        </nav>
-    </header>
+        <a href="assets/pdf/trabajo-grado-magister-mlvc-2024.pdf" target="_blank" rel="noopener noreferrer" class="pf-card reveal reveal-delay-1">
+          <span class="card-num">02</span>
+          <div class="card-body">
+            <h3 class="card-h3">Ergonomía</h3>
+            <p class="card-p">Evaluación y diseño de productos y espacios considerando bienestar físico, cognitivo y emocional.</p>
+            <span class="card-arrow">Ver proyecto →</span>
+          </div>
+        </a>
 
-    <main>
-        <section class="hero">
-        <h1>Hola, soy María Loreto</h1>
-        <p>Diseñadora industrial con especialización en UX UI, ergonomía y desarrollo web
-        </p>
+        <a href="assets/pdf/ux-ui-mobikit-2023.pdf" target="_blank" rel="noopener noreferrer" class="pf-card reveal reveal-delay-2">
+          <span class="card-num">03</span>
+          <div class="card-body">
+            <h3 class="card-h3">UX UI</h3>
+            <p class="card-p">Diseño de experiencias digitales centradas en el usuario para entornos virtuales.</p>
+            <span class="card-arrow">Ver proyecto →</span>
+          </div>
+        </a>
 
-        <!--boton fucsia-->
-        <div class="espaciado">        
-            <a class="btn" href="assets/pdf/CV_maria_vallejos_23.03.26.pdf" target="_blank" rel="noopener noreferrer">Ver Currículum
-            </a>
+        <a href="https://github.com/Loreto-Vallejos" target="_blank" rel="noopener noreferrer" class="pf-card reveal reveal-delay-3">
+          <span class="card-num">04</span>
+          <div class="card-body">
+            <h3 class="card-h3">Desarrollo Web</h3>
+            <p class="card-p">Proyectos de desarrollo Front-End integrando diseño y tecnología.</p>
+            <span class="card-arrow">Ver en GitHub →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="about">
+      <div class="about-inner">
+        <div class="about-left reveal">
+          <div class="section-header" style="border-bottom: 1px solid var(--border); padding-bottom: 1rem; margin-bottom: 0;">
+            <span class="section-label">Sobre mí</span>
+          </div>
         </div>
-   
-        </section>
-
-        <!--proyectos-->
-        <section id="work" class="work-section">
-        <h2>Proyectos en los que he trabajado</h2>
-        <div class="grid">
-
-            <a href="../../../../diseno-industrial.html" target="_blank" rel="noopener noreferrer" class="card-link">
-            <div class="card">Diseño Industrial</div>
-            </a>
-
-            <a href="assets/pdf/trabajo-grado-magister-mlvc-2024.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
-            <div class="card">Ergonomía</div>
-            </a>
-
-            <a href="assets/pdf/ux-ui-mobikit-2023.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
-            <div class="card">UX UI</div>
-            </a>
-
-            <a href="../../../../desarrollo-web.html" target="_blank" rel="noopener noreferrer" class="card-link">
-            <div class="card">Desarrollo Web</div>
-            </a>
-
+        <div class="about-right reveal reveal-delay-1">
+          <p>Soy Diseñadora Industrial con sólida experiencia en el desarrollo de productos, mobiliario y soluciones centradas en el usuario. A lo largo de más de 10 años he trabajado en proyectos que combinan funcionalidad, estética y usabilidad, integrando principios de ergonomía y diseño técnico.</p>
+          <p>Mi formación incluye un Magíster en Ergonomía y Factores Humanos, lo que me permite evaluar y diseñar productos y espacios considerando el bienestar físico, cognitivo y emocional de las personas.</p>
+          <p>En los últimos años he ampliado mi enfoque al diseño digital, incorporando conocimientos en desarrollo Front-End y diseño UX/UI para potenciar la experiencia de usuario también en entornos virtuales.</p>
+          <p>Hoy combino lo mejor del diseño físico y digital para ofrecer soluciones integrales, pensadas desde el cuerpo, la experiencia y el contexto de uso.</p>
         </div>
-        </section>
-        <!--sobre mi-->
+      </div>
+    </section>
 
-        <section id="about" class="about-section">
-            <article>
-                <h2>Sobre mí</h2>
-                <div class="container">
-                    <em><p>Soy Diseñadora Industrial con sólida experiencia en el desarrollo de productos, mobiliario y soluciones centradas en el usuario. A lo largo de más de 10 años he trabajado en proyectos que combinan funcionalidad, estética y usabilidad, integrando principios de ergonomía y diseño técnico.
+    <!-- CONTACTO -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <h2>¿Trabajamos<br><em>juntos?</em></h2>
+          <p>Escríbeme y cuéntame tu proyecto. Respondo en menos de 24 horas.</p>
+        </div>
+        <div class="contact-right reveal reveal-delay-1">
+          <!-- correo de llegada-->
+          <form action="https://formsubmit.co/macerdava@gmail.com" method="POST" class="contact-form">
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-field">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+            </div>
+            <div class="form-field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntame tu proyecto…" required></textarea>
+            </div>
+            <button class="btn-primary-custom form-submit" type="submit">
+              Enviar mensaje
+              <i class="fa-solid fa-arrow-right" style="font-size:10px"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-                    <p>Mi formación incluye un Magíster en Ergonomía y Factores Humanos, lo que me permite evaluar y diseñar productos y espacios considerando el bienestar físico, cognitivo y emocional de las personas. He participado en todas las etapas del diseño: desde la conceptualización, dibujo técnico y prototipado, hasta la evaluación de carga y análisis antropométricos.</p>
+  </main>
 
-                    <p>En los últimos años he ampliado mi enfoque al diseño digital, incorporando conocimientos en desarrollo Front-End y diseño UX/UI para potenciar la experiencia de usuario también en entornos virtuales.</p>
+  <footer>
+    <p>© 2026 LoretoVallejos.cl</p>
+    <div class="footer-links">
+      <a href="#work">Portafolio</a>
+      <a href="#about">Sobre mí</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </footer>
 
-                    <p>Hoy combino lo mejor del diseño físico y digital para ofrecer soluciones integrales, pensadas desde el cuerpo, la experiencia y el contexto de uso.</p></em>
-                </div>
-                </article>
-        </section>
-            
-
-        <section id="contact" class="contact-section">
-        <h2>Contacto</h2>
-        <p>¿Quieres trabajar conmigo? Escríbeme.</p>
-
-        <form action="https://formsubmit.co/macerdava@gmail.com" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="email" name="correo" placeholder="Correo electrónico" required>
-        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-        <button class="btn" type="submit">Enviar</button>
-        </form>
-
-        </section>
-        
-    </main>
-
-    <footer>
-        <p>© 2025 LoretoVallejos.cl</p>
-    </footer>
-
-    <script src="script.js"></script>
-    </body>
+  <script src="main.js"></script>
+</body>
 </html>
